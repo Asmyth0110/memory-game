@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Memory Game</h1>
+    <div class="score-board">
+        Moves: <span id="moves">0</span>
+    </div>
+    <div id="congratulations" class="hidden">
+        Congratulations! You completed the game in <span id="total-moves">0</span> moves.
+    </div>
+    <button id="reset-button" class="hidden">Reset Game</button>
+   
+    <div class="memory-game">
+        <div class="memory-card" data-framework="one">
+            <img class="front-face" src="images/shapes-abstract.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="one">
+            <img class="front-face" src="images/shapes-abstract.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="two">
+            <img class="front-face" src="images/triangles-triangle.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="two">
+            <img class="front-face" src="images/triangles-triangle.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="three">
+            <img class="front-face" src="images/triangles-shapes-and-symbols.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="three">
+            <img class="front-face" src="images/triangles-shapes-and-symbols.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="four">
+            <img class="front-face" src="images/crosses.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="four">
+            <img class="front-face" src="images/crosses.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div> 
+        <div class="memory-card" data-framework="five">
+            <img class="front-face" src="images/eye.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div>
+         <div class="memory-card" data-framework="five">
+            <img class="front-face" src="images/eye.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="six">
+            <img class="front-face" src="images/squares.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="six">
+            <img class="front-face" src="images/squares.svg" alt="a card">
+            <img class="back-face" src="images/back-face.svg" alt="Memory Card">
+        </div>
+   
+        <!-- Repeat similar structure for more cards -->
+    </div>
+    <div class="animation-container">
+        <div class="treadmill">
+            <div class="dog">
+                <img src="images/dog-running.gif" alt="Dog running">
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
